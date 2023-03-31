@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLASTERS GYM</title>
+</head>
+<style>
+    /* css reset */
+    body{
+        color: burlywood;
+        margin: 0px;
+        padding: 0px;
+        background-image: url(img/man.jpg);
+        /* background-position-x: center;
+        background-repeat: no-repeat; */
+    }
+    .left{
+        display: inline-block;
+        position: absolute;
+        top: 20px;
+        left: 30px;
+        /* border: 2px solid royalblue; */
+    }
+    
+    .left img{
+        display: inline-block;
+        filter: invert(57);
+        margin: auto 12px;
+        width: 100px;
+        height: 100px;
+    }
+
+    .left h4{
+        text-align: center;
+        /* text-decoration: underline; */
+        color: burlywood;
+        font-weight: bold;
+    }
+    .mid{
+        display: block;
+        width: 50%;
+        margin: 20px auto;
+        /* border: 2px solid royalblue; */
+    }
+    .mid ul li{
+        display: inline-block;
+        margin-left:20px;
+        font-size: 25px;
+    }
+
+    .mid ul li a{
+        text-decoration: none;
+        color: burlywood;
+    }
+
+    .mid ul li a:hover{
+        color: white;
+        text-decoration: underline;
+    }
+
+    .mid ul li a.active{
+        color: white;
+        text-decoration: underline;
+    }
+    .right{
+        display: inline-block;
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        /* border: 2px solid royalblue; */
+    }
+
+    .right button.btn{
+        margin:10px 10px ;
+        padding: 5px 5px;
+        color: blue;
+        cursor: pointer; /* IT WILL CHANGE CURSOR TO POINTER */
+        border: 2px solid black;
+        border-radius: 14px;
+        background-color: lightgray;
+    }
+    .right button.btn:hover{
+        background-color: lightblue;
+    }
+
+    .container{
+        display:block;
+        border: 2px solid black ;
+        width: 33%;
+        margin:150px 140px;
+    }
+
+    .container h1{
+        text-align: center;
+        text-decoration: underline;
+    }
+    .form-group input{
+        margin:8px 100px;
+        padding: 10px 30px;
+        border: 2px solid black;
+        border-radius: 14px;
+        
+    }
+
+    .container button.btn{
+        margin:10px 100px ;
+        padding: 5px;
+        display: block;
+        width: 240px;
+        color: blue;
+        cursor: pointer; /* IT WILL CHANGE CURSOR TO POINTER */
+        border: 2px solid black;
+        border-radius: 14px;
+        background-color: lightgray;
+    }
+</style>
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/b.jpg" alt="">
+            <h4>BLASTERS GYM</h4>
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>  
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">E-mail</button>
+        </div>
+    </header>
+
+    <!-- CREATTING A FORM FOR WEBSITE -->
+    <div class="container">
+        <h1>JOINING FORM</h1>
+        <form action="noaction.php">
+            <div class="form-group"><input type="text" name="" placeholder="Enter your Name"></div>
+            <div class="form-group"><input type="text" name="" placeholder="Enter your Age"></div>
+            <div class="form-group"><input type="text" name="" placeholder="Enter your Gender"></div>
+            <div class="form-group"><input type="text" name="" placeholder="Enter your Locality"></div>
+            <div class="form-group"><input type="text" name="" placeholder="Enter your E-mail ID"></div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
