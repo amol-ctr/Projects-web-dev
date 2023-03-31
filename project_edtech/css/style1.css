@@ -1,0 +1,253 @@
+body{
+    
+}
+
+#navbar{
+    display: block;
+    position:absolute;
+    width: 100%;
+    height: 70px;
+    margin: 0px 0px;
+    background-color: black; 
+    opacity: 0.7;
+    display: flex;
+}
+
+#search_icon{
+    height: 37px;
+    width: 56px;
+    position: absolute;
+    top: 20%;
+    right: 303px;
+    border-radius: 10px;
+    filter: invert(57);
+}
+
+#navbar input{
+    height:50%;
+    position: absolute;
+    top: 20%;
+    right: 100px;
+    padding:0px 12px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+#navbar ul{
+    display: flex;
+    /* flex-direction: column; */
+}
+
+#navbar ul li{
+    list-style: none;
+    margin:5px 10px;
+    padding: 0px 5px;
+}
+
+#logo1{
+    height: 37px;
+    width: 56px;
+    position: absolute;
+    top: 20%;
+    display: inline-block;
+    left:10px;
+    filter: invert(57);
+}
+
+#navbar ul li a{
+    color: aliceblue;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: yellow;
+    text-decoration: underline;
+    background-color: darkcyan;
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+
+#cart_img{
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: 30%;
+    left:550px;
+    filter: invert(57);
+}
+
+/* Home section */
+
+#Home{
+    background: url("../img/home_bg.jpg");
+    z-index: -1;
+    display: block;
+    position:absolute;
+    top: 75px;
+}
+
+
+.heading{
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: bolder;
+
+}
+
+.box{
+    display: flex;
+    border: 2px solid black;
+    background-color: rgb(0, 132, 255);
+    color: white;
+    align-items: center;
+    justify-items: center;
+    /* font-weight: bold; */
+}
+
+.container{
+    width:23%;
+    height: 120px;
+    font-size: 2rem;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    border-right: 2px solid white;
+}
+
+#home_img{
+    float: right;
+    margin:30px;
+    height:300px;
+    width:30%;
+    border: 4px solid brown;
+    border-radius: 12px;
+}
+
+form{
+    float: left;
+    display: block;
+    background-color: rgba(128, 128, 128, 0.438);
+    z-index: 1;
+    border:2px solid black;
+    border-radius: 30px;
+    width: 25%;
+    padding: 30px 100px;
+    position: absolute;
+    top: 460px;
+    left: 150px;
+}
+
+.form-group{
+    margin: 10px 15px;
+    padding: 10px 25px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+#btn{
+    
+    padding: 10px 25px;
+    border: 2px solid black;
+    border-radius: 20px;
+    align-content: center;
+    margin:15px 122px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#btn:hover{
+    background-color: lightblue;
+}
+
+label{
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+/* Courses section */
+
+#Our_Courses{
+    display: block;
+    position: absolute;
+    width: 100%;
+    border-top: 2px solid black;
+    top: 140%;
+    background-color: lightgray;
+}
+
+/* #Our_Courses::before{
+    content: "";
+    background: url("../img/home_bg.jpg");
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+} */
+
+.courses{
+    display: flex;
+    margin: 20px 0px;
+}
+
+.heading2{
+    display: inline-block;
+    margin:40px 40%;
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: bolder;
+    color: red;
+    background-color: lightgreen;
+    text-decoration: underline;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    text-shadow: 2px 2px blue;
+}
+
+.container2{
+    display: block;
+    width: 30%;
+    margin: 10px 20px; 
+    padding: 5px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius:20px;
+    background-color: lightgoldenrodyellow;
+    box-shadow: 8px 8px 4px blue;
+}
+
+.heading3{
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: darkred;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: lightpink;
+    text-shadow: 3px 2px whitesmoke;
+}
+
+.para{
+    font-size: 1.25rem;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: lightgreen;
+    border-top: 5px solid red;
+}
+
+.container3{
+    display: block;
+    width: 30%;
+    margin: 10px 20px;
+    padding: 5px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius:20px;
+    background-color: lightgoldenrodyellow;
+    box-shadow: 8px 8px 2px green;
+}
+
