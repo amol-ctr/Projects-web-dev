@@ -1,0 +1,268 @@
+body{
+    font-family: 'Baloo Bhai', cursive;
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* NAVIGATION BAR */
+#navbar{
+    display: flex;
+    /* height: 100px; */
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    position: sticky;
+    z-index: 1;
+}
+
+#navbar img{
+    margin: 8px;
+}
+
+#logo{
+    width: 100px;
+    height: 100px;
+    padding: 4px;
+    margin-left :10px;
+    border: 1px solid red;
+    border-radius: 100%;
+}
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 125px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+.item a{
+    display: block;
+    padding: 5px 10px;
+    margin-left: 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bolder;
+    color: rgb(749 276 306);
+}
+
+.item a:hover{
+    background-color: blanchedalmond;
+    color: brown;
+    text-decoration: underline;
+}
+
+/* HOME SECTION */
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding-bottom: 14px;
+    top: 0px;
+    left: 0px;
+    /* height: 367px; */
+}
+
+#home::before{
+    content: "";
+    background: url('../img/apples.jpg') no-repeat center center/cover;
+    z-index: -2;
+    position: absolute;
+    opacity: 0.9;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+}
+
+#home h1{
+    font-size: 3rem;
+    /* font-family:'Times New Roman', Times, serif; */
+    /* text-decoration: underline; */
+    margin-bottom: 4px;
+    color: #0c2cdd;
+    font-style: italic;
+}
+
+#home p{
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: black;
+    margin: 10px 200px;
+
+}
+
+.button{
+    display: block;
+    align-self: flex-start;
+    margin-left: 45%;
+    border: 1px solid black;
+    padding: 4px 20px;
+    font-size: 1rem;
+    border-radius: 23px;
+    cursor: pointer;
+    /* align-items: center; */
+}
+
+/* SERVICES SECTION */
+
+#services-container{
+    position: relative;
+    /* top: 69.3%; */
+    /* height: 440px; */
+    padding-bottom: 10px;
+}
+
+#services-container::before{
+    content: "";
+    background:url('../img/bg3.jpg') no-repeat center center/cover;
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+}
+
+#services{
+    display: flex;
+   
+}
+
+.h-primarycenter{
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.h-secondarycenter{
+    text-align: center;
+    font-size: 2rem;
+    margin: 3px auto;
+}
+
+.box{
+    text-align: center;
+    border: 2px solid brown;
+    box-shadow:-8px -8px 7px blue;
+    border-radius: 23px;
+    margin: 18px 50px;
+    background-color: lightgrey;
+}
+
+.box img{
+    height: 100px;
+    width:200px;
+    margin: 10px;
+}
+
+.box p{
+    margin-top: 3px;
+    padding: 10px;
+}
+
+/* CLIENTS SECTION */
+
+#clients-container{
+    position: relative;
+    top: -5px;
+    width: 100%;
+    /* left: 150px;
+    background-color: aqua; */
+}
+
+#clients-container::before{
+    content: "";
+    background: url('../img/bg2_.jpg') no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 104%;
+    z-index: -1;
+    /* opacity: 1; */
+}
+
+#clients-container h1{
+    text-align: center;
+    font-size: 3rem;
+    /* margin-top: 10px; */
+}
+
+.clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    /*  */
+}
+
+.logo img{
+    height: 125px;
+    padding:34px;
+}
+
+/* CONTACT CONTAINER */
+
+#contact-container{
+    background-color: #ffa07a7d;
+    padding-bottom: 11px;
+}
+
+#contact-container::before{
+    content: "";
+    background:url('../img/bg3.jpg') no-repeat center center/cover;
+    position: absolute;
+    z-index: -1;
+    height: 90%;
+    width: 100%;
+}
+
+.formbox{
+
+}
+
+.form{
+    margin: 5px;
+    margin-left: 40%;
+}
+
+input{
+    padding: 4px 10px;
+    font-family: 'Baloo Bhai', cursive;
+    border-radius: 12px;
+}
+
+textarea{
+    border-radius: 12px;
+    padding: 4px 10px;
+}
+
+
+
+/* FOOTER */
+.center{
+    text-align: center;
+}
+
+footer{
+    background-color: lightgray;
+    font-size: 0.8rem;
+}
